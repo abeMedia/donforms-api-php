@@ -2,7 +2,7 @@
     "name": "donlabs/donforms",
     "description": "API Wrapper for donForms",
     "keywords": ["donforms","api"],
-    "homepage": "http://github.com/abemedia/donforms-api-php",
+    "homepage": "http://github.com/donlabs/donforms-api-php",
     "license": "GPL-2.0",
     "authors": [
         {
