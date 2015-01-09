@@ -19,26 +19,28 @@ print_r($donforms->user->getList());
 echo "\n\n";
 echo "Get current user";
 echo "\n\n";
-print_r($donforms->user->get('brightonjapan'));
+print_r($donforms->user->get());
 
 echo "\n\n";
 echo "Get current user's forms";
 echo "\n\n";
-print_r($donforms->form->getList('brightonjapan'));
+print_r($donforms->form->getList());
 
 echo "\n\n";
 echo "Get single form";
 echo "\n\n";
-print_r($donforms->form->get('Dq'));
+$id = $donforms->form->getList()[0]->id;
+print_r($donforms->form->get($id));
 
 echo "\n\n";
 echo "Get form submissions";
 echo "\n\n";
-print_r($donforms->data->getList('Dq'));
+print_r($donforms->data->getList($id));
 
 echo "\n\n";
 echo "Get single form submission";
 echo "\n\n";
-print_r($donforms->data->get('Dq'));
+$id = $donforms->data->getList($id)[0]->id;
+print_r($donforms->data->get($id));
 
 echo "</pre>";
