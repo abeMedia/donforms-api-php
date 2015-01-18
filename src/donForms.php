@@ -5,7 +5,7 @@ namespace donForms;
 class donForms
 {
     protected $secret;
-    protected $api_endpoint = 'https://forms.donlabs.com/';
+    protected $api_endpoint = 'http://forms.donlabs.com/';
 
 	/**
 	 * @var    Http  The HTTP client object to use in sending HTTP requests.

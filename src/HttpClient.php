@@ -46,6 +46,7 @@ class HttpClient
                 curl_setopt($this->handler, CURLOPT_AUTOREFERER, true);
                 curl_setopt($this->handler, CURLOPT_COOKIE, "");
                 curl_setopt($this->handler, CURLOPT_COOKIEFILE, tempnam("/tmp", "cookie"));
+                curl_setopt($this->handler, CURLOPT_SSLVERSION , 3);
             } else {
                 throw new \Exception("Missing CURL extension. Check your PHP configuration.");
             }
